@@ -1,0 +1,22 @@
+<h3>Listado de proveedores</h3>
+
+<a class="btn btn-primary float-md-right" routerLink="/addprovee">
+    Añadir nuevo proveedor</a>
+<br>
+
+<table class="table table-bordered table-striped tabla" style="margin-top:40px;">
+    <thead>
+        <tr class="filters">
+            <th>Nombre</th>
+            <th>Ciudad</th>
+            <th>Contacto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let proveedor of proveedores">
+            <td>{{proveedor.nombre}}</td>
+            <td>{{proveedor.direccion}}</td>
+            <td>{{proveedor.contacto}}</td>
+        </tr>
+    </tbody>
+</table>

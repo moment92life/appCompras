@@ -1,0 +1,1 @@
+concepto: ['', [ Validators.required, Validators.minLength(10)]],
